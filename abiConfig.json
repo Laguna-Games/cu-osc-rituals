@@ -1,5 +1,5 @@
 {
-	"projectName": "ABIs",
+	"projectName": "Rituals",
 	"buildDirectory": "build",
 	"abiOutputDirectory": "abi",
 	"abiConfigurations": [
@@ -34,7 +34,7 @@
 				"DebugActivity"
 			],
 			"functionsToIgnore": [
-				"diamondCut", 
+				"diamondCut",
 				"transferOwnership",
 				"owner",
 				"facetAddresses",
