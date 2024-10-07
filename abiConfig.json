@@ -1,0 +1,73 @@
+{
+	"projectName": "ABIs",
+	"buildDirectory": "build",
+	"abiOutputDirectory": "abi",
+	"abiConfigurations": [
+		{
+			"configuration": "public",
+			"sortedJSON": true,
+			"searchRecursively": true,
+			"contractsToInclude": [],
+			"contractsToIgnore": [
+				"DebugFacet",
+				"DeployFacet",
+				"DiamondImplementationProxyFacet",
+				"ExtendedDiamondCutFacet",
+				"HatcherySetupFacet",
+				"MockERC721",
+				"MockErc20",
+				"MockTerminus",
+				"DiamondLoupeFacet",
+				"DiamondCutFacet",
+				"DiamondImplementationProxyFacet",
+				"OwnershipFacet",
+				"ObjectPoolFacet",
+				"ImageDataFacet",
+				"InnateRitualFacet"
+			],
+			"eventsToIgnore": [
+				"DiamondCut",
+				"OwnershipTransferred",
+				"Approval",
+				"ApprovalForAll",
+				"SetHatcheryAddress",
+				"DebugActivity"
+			],
+			"functionsToIgnore": [
+				"diamondCut", 
+				"transferOwnership",
+				"owner",
+				"facetAddresses",
+				"facetAddress",
+				"facets",
+				"facetFunctionSelectors"
+			],
+			"selectorsToIgnore": [],
+			"eventsPrecedence": {
+				"OwnershipTransferred": "LibDiamond",
+				"DiamondCut": "LibDiamond"
+			}
+		},
+		{
+			"configuration": "lgInternal",
+			"sortedJSON": true,
+			"searchRecursively": true,
+			"contractsToInclude": [],
+			"contractsToIgnore": [
+				"DiamondImplementationProxyFacet",
+				"ExtendedDiamondCutFacet",
+				"HatcherySetupFacet",
+				"MockERC721",
+				"MockErc20",
+				"MockTerminus"
+			],
+			"eventsToIgnore": [],
+			"functionsToIgnore": [],
+			"selectorsToIgnore": [],
+			"eventsPrecedence": {
+				"OwnershipTransferred": "LibDiamond",
+				"DiamondCut": "LibDiamond"
+			}
+		}
+	]
+}
